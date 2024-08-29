@@ -1,0 +1,14 @@
+#hello-world-paragraph {
+  background-color:yellow;
+  color: #1e88c2;
+  font-size: 24px;
+}
+h2 {
+  color:green;
+}
+.subsection-paragraph {
+  color: blue;
+}
+.lorem-paragraph {
+  font-family: "Montserrat", "Comic Sans MS", sans-serif;
+}
