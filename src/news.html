@@ -8,9 +8,12 @@
   </head>
   <body>
     <a href="index.html">Go Back To Home Page</a>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <img src="https://www.rd.com/wp-content/uploads/2016/01/04-dog-breeds-dalmation.jpg" width="200" alt="A Dalmatian Dog">
-    <audio src="https://github.com/nbktechworld/introduction-to-html/raw/abcdac58651ba724c40665c82dd55f171534115f/document-two-sections/barking.mp3" controls></audio>
+    <p id="section-title">Lorem ipsum dolor sit amet.</p>
+    <img src="https://www.rd.com/wp-content/uploads/2016/01/04-dog-breeds-dalmation.jpg" width="200" alt="A Dalmatian Dog" onclick="addBorder()" class="js-pet-image">
+    <button type="button" onclick="previousImage()">Previous Image</button>
+    <button type="button" onclick="nextImage()">Next Image</button>
+    <button type="button" onclick="bark()">🐶👋Pet the Dog</button>
+    <audio src="https://github.com/nbktechworld/introduction-to-html/raw/abcdac58651ba724c40665c82dd55f171534115f/document-two-sections/barking.mp3" controls id="pet-audio"></audio>
     <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" width="200" controls></video>
     <ol>
       <li>First point</li>
@@ -18,5 +21,6 @@
       <li>Second point</li>
       <li>Second point</li>
     </ol>
+    <script src="news.js"></script>
   </body>
 </html>
