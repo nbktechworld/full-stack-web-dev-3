@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Message Board</title>
+    <link rel="stylesheet" href="messages.css">
+  </head>
+  <body>
+    <h1>Message Board</h1>
+    <form onsubmit="addMessage(event)">
+      <textarea name="message" id="message-form-message"></textarea>
+      <button type="submit">Write Message</button>
+    </form>
+    <div id="message-list" class="message-list">
+    </div>
+    <script src="messages.js"></script>
+  </body>
+</html>
