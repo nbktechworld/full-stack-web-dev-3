@@ -1,0 +1,9 @@
+.message-list .message-list-item {
+  margin-bottom: 16px;
+}
+
+.message-list-item {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 12px;
+}
