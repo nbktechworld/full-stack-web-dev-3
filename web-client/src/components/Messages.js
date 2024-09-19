@@ -10,7 +10,7 @@ function Messages() {
   const [submissionError, setSubmissionError] = useState(null);
 
   useEffect(function() {
-    fetch('https://jsonplaceholder.typicode.com/posts?_limit=3').then(function(response) {
+    fetch('http://localhost:3001/messages').then(function(response) {
       // todo: check if response is actually OK
       // if (!response.ok) {
       //   throw new Error(...)
@@ -77,7 +77,7 @@ function Messages() {
         {messages.map(function(message) {
           return (
             <div className="message-list-item" key={message.id}>
-              {message.title}
+              {message.body}
             </div>
           );
         })}
