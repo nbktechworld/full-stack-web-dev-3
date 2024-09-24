@@ -33,10 +33,10 @@ function Messages() {
   function addMessage(event) {
     event.preventDefault();
 
-    fetch('https://jsonplaceholder.typicode.com/posts', {
+    fetch('http://localhost:3001/messages', {
       method: 'POST',
       body: JSON.stringify({
-        title: newMessage,
+        body: newMessage,
         // body: 'something...',
         // ...
       }),
