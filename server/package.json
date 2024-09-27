@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "tunnel": "lt --port 3001 --subdomain full-stack-web-dev"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "pg": "^8.13.0"
   },
   "devDependencies": {
+    "localtunnel": "^2.0.2",
     "nodemon": "^3.1.5"
   }
 }
